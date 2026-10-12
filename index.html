@@ -187,15 +187,6 @@ const CONFIG = {
   finalTitulo: "Te amo, Monchis",
   finalTexto:  "Gracias por ser mi vínculo contigo, pdt: Saludos a rufo amor.",   // cámbialo por lo que quieras
 };
-
-/* ──────────────────────────────────────────────────────────────
-   LETRA SINCRONIZADA
-   t   = segundo en que aparece la línea
-   fin = (opcional) segundo en que se cierra la ventana (para silencios)
-   No incluyo la letra por derechos de autor: pégala tú.
-   Para sacar los tiempos fácil abre la página con  ?calibrar
-   (ejemplo: https://tuusuario.github.io/tu-repo/?calibrar)
-   ────────────────────────────────────────────────────────────── */
 const LETRA = [
   { t: 0.42, texto: "Si acaba el mundo hoy" },
   { t: 4.80, texto: "Si no sale el sol" },
@@ -283,7 +274,7 @@ function crearVentana(i){
       <div class="gifbox"><img src="${CONFIG.gif}" alt=""></div>
       <div class="texto">${palabras}</div>
     </div>
-    <div class="pie"><button class="Je t'aime">OK</button></div>`;
+    <div class="pie"><button class="ok">OK</button></div>`;
   contVentanas.appendChild(w);
   explosion(10);
   return w;
